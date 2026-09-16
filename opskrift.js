@@ -37,6 +37,11 @@ function visOpskrift(o) {
     <h2>Sådan gør du</h2>
     <ol class="trin-liste">${trinHtml}</ol>
 
+    <div class="portion-vaelger">
+      <label for="portion-antal">Antal portioner til indkøb</label>
+      <input type="number" id="portion-antal" min="1" step="1" value="${o.portioner}">
+    </div>
+
     <button id="tilfoej-knap" class="knap-primaer" type="button">
       🛒 Tilføj til indkøbsliste
     </button>
@@ -49,8 +54,12 @@ function visOpskrift(o) {
 
   const knap = document.getElementById("tilfoej-knap");
   const kvittering = document.getElementById("tilfoej-kvittering");
+  const portionInput = document.getElementById("portion-antal");
+
   knap.addEventListener("click", () => {
-    tilfoejOpskriftTilIndkoebsliste(o);
+    const oensketAntal = Number(portionInput.value) || o.portioner;
+    const skaleringsFaktor = oensketAntal / o.portioner;
+    tilfoejOpskriftTilIndkoebsliste(o, skaleringsFaktor);
     kvittering.innerHTML = '✅ Tilføjet til <a href="indkoeb.html">indkøbslisten</a>.';
     kvittering.hidden = false;
   });

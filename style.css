@@ -227,8 +227,25 @@ body {
   font-size: clamp(18px, 2.2vw, 22px);
 }
 
+.portion-vaelger {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  font-size: 18px;
+}
+
+.portion-vaelger input {
+  width: 80px;
+  font-size: 22px;
+  padding: 10px;
+  border: 3px solid var(--farve-knap-kant);
+  border-radius: 12px;
+  text-align: center;
+}
+
 .knap-primaer {
-  margin-top: 32px;
+  margin-top: 16px;
   font-size: 20px;
   font-weight: 700;
   padding: 18px 28px;

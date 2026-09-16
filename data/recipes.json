@@ -311,9 +311,9 @@
       { "navn": "æg", "maengde": 1, "enhed": "stk", "afdeling": "køl" },
       { "navn": "hvedemel", "maengde": 2, "enhed": "spsk", "afdeling": "kolonial" },
       { "navn": "mælk", "maengde": 0.5, "enhed": "dl", "afdeling": "køl" },
-      { "navn": "olie og smør til stegning", "maengde": 2, "enhed": "spsk", "afdeling": "køl" },
+      { "navn": "smør", "maengde": 1, "enhed": "spsk", "afdeling": "køl" },
       { "navn": "kartofler", "maengde": 1000, "enhed": "g", "afdeling": "frugt og grønt" },
-      { "navn": "olie til kartofler", "maengde": 1, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "olie", "maengde": 2, "enhed": "spsk", "afdeling": "kolonial" },
       { "navn": "løg", "maengde": 1, "enhed": "stk", "afdeling": "frugt og grønt" },
       { "navn": "flåede tomater", "maengde": 1, "enhed": "dåse", "afdeling": "kolonial" },
       { "navn": "sukker", "maengde": 1, "enhed": "tsk", "afdeling": "kolonial" }
@@ -375,7 +375,7 @@
       { "navn": "gulerødder", "maengde": 3, "enhed": "stk", "afdeling": "frugt og grønt" },
       { "navn": "olivenolie", "maengde": 1, "enhed": "spsk", "afdeling": "kolonial" },
       { "navn": "hakket oksekød, 10-12% fedt", "maengde": 400, "enhed": "g", "afdeling": "kød og fisk" },
-      { "navn": "hakkede, flåede tomater", "maengde": 400, "enhed": "g", "afdeling": "kolonial" },
+      { "navn": "flåede tomater", "maengde": 400, "enhed": "g", "afdeling": "kolonial" },
       { "navn": "tomatpuré", "maengde": 2, "enhed": "spsk", "afdeling": "kolonial" },
       { "navn": "oregano, tørret", "maengde": 3, "enhed": "tsk", "afdeling": "kolonial" },
       { "navn": "spaghetti, gerne fuldkorn", "maengde": 300, "enhed": "g", "afdeling": "kolonial" },
@@ -537,7 +537,7 @@
     "portioner": 4,
     "ingredienser": [
       { "navn": "fiskefilet, fx sej eller laks", "maengde": 125, "enhed": "g", "afdeling": "kød og fisk" },
-      { "navn": "olie til pensling", "maengde": 1, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "olie", "maengde": 1, "enhed": "spsk", "afdeling": "kolonial" },
       { "navn": "mayonnaise", "maengde": 1, "enhed": "spsk", "afdeling": "køl" },
       { "navn": "A38", "maengde": 1, "enhed": "spsk", "afdeling": "køl" },
       { "navn": "citronsaft", "maengde": 1, "enhed": "stænk", "afdeling": "frugt og grønt" }

@@ -23,29 +23,49 @@ function lavVareId() {
   return "vare-" + Date.now() + "-" + Math.random().toString(36).slice(2, 8);
 }
 
-// Tilføjer alle ingredienser fra en opskrift (undtagen vand).
-// Findes en vare med samme navn, enhed og afdeling i forvejen, lægges mængden sammen.
-function tilfoejOpskriftTilIndkoebsliste(opskrift) {
+// Tilføjer alle ingredienser fra en opskrift (undtagen vand), skaleret til det ønskede
+// antal portioner. Kendes ingrediensen fra ingrediens-koeb.js, lægges den sammen med
+// eventuelle tidligere tilføjelser i GRAM (uanset om opskrifterne bruger fx dl eller spsk),
+// så vi bagefter kan foreslå en realistisk indkøbsmængde. Ukendte ingredienser lægges
+// i stedet sammen efter navn, enhed og afdeling, som opskriften selv angiver dem.
+function tilfoejOpskriftTilIndkoebsliste(opskrift, skaleringsFaktor = 1) {
   const liste = hentIndkoebsliste();
 
   opskrift.ingredienser.forEach((ing) => {
-    let navn = ing.navn;
-    let maengde = ing.maengde;
+    const navn = ing.valg ? ing.valg[1] : ing.navn;
+    const maengde = ing.maengde * skaleringsFaktor;
     const enhed = ing.enhed;
     const afdeling = ing.afdeling;
 
-    // Ved valg mellem modermælk og modermælkserstatning skal kun
-    // modermælkserstatning på indkøbslisten – modermælk købes ikke.
-    if (ing.valg) {
-      navn = ing.valg[1];
-    }
-
     if (erVand(navn)) return;
+
+    const tabelEntry = INGREDIENS_KOEB[navn];
+    const gram = tabelEntry ? beregnGram(tabelEntry, maengde, enhed) : null;
+
+    if (tabelEntry && gram !== null) {
+      const eksisterende = liste.find(
+        (v) => v.navn === navn && v.afdeling === afdeling && v.koebGram !== undefined
+      );
+      if (eksisterende) {
+        eksisterende.koebGram += gram;
+        if (!eksisterende.fraOpskrifter.includes(opskrift.navn)) {
+          eksisterende.fraOpskrifter.push(opskrift.navn);
+        }
+      } else {
+        liste.push({
+          id: lavVareId(),
+          navn,
+          afdeling,
+          koebGram: gram,
+          fraOpskrifter: [opskrift.navn],
+        });
+      }
+      return;
+    }
 
     const eksisterende = liste.find(
       (v) => v.navn === navn && v.enhed === enhed && v.afdeling === afdeling
     );
-
     if (eksisterende) {
       eksisterende.maengde += maengde;
       if (!eksisterende.fraOpskrifter.includes(opskrift.navn)) {

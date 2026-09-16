@@ -41,9 +41,13 @@ function visIndkoebsliste() {
   afdelinger.forEach((afdeling) => {
     html += `<h2>${afdeling}</h2><ul class="indkoeb-liste">`;
     grupper[afdeling].forEach((vare) => {
+      const tekst =
+        vare.koebGram !== undefined
+          ? `${vare.navn} (${formatKoebForslag(vare.koebGram, INGREDIENS_KOEB[vare.navn].koeb)})`
+          : `${vare.navn} – ${formatMaengde(vare.maengde)} ${vare.enhed}`;
       html += `
         <li class="indkoeb-vare" data-id="${vare.id}">
-          <span class="vare-tekst">${vare.navn} – ${formatMaengde(vare.maengde)} ${vare.enhed}</span>
+          <span class="vare-tekst">${tekst}</span>
           <button class="slet-knap" type="button" aria-label="Slet ${vare.navn}">✕</button>
         </li>
       `;
