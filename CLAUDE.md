@@ -27,6 +27,7 @@ Appen bruges kun på én iPad i køkkenet. Ingen login, ingen synkronisering mel
 3. **Køleskab**: Afkryds ingredienser vi har. Foreslå opskrifter sorteret efter færrest manglende ingredienser.
 4. **Ugeplan**: 7 dage × måltider (morgen, middag, aften). Vælg selv eller tryk "Foreslå uge". Kør regeltjek (se nedenfor) og vis advarsler tydeligt, men venligt.
 5. **Indkøbsliste og mealprep**: Saml ingredienser for ugen, skalér efter antal portioner, træk det fra, vi har i køleskabet, og gruppér efter butiksafdeling. Lav en prep-plan: hvad der koges samme dag, hvad der fryses i portioner, og hvornår det skal bruges.
+   - **"Tilføj til indkøbsliste" fra en opskrift**: Når man trykker knappen på en opskrift, tjekkes hver ingrediens op mod Køleskab. Ingredienser der slet ikke er afkrydset i køleskabet, tilføjes direkte. For ingredienser der ER afkrydset (vi har den, men ikke nødvendigvis nok), spørger appen: "Hvor meget har du af [ingrediens] i køleskabet?" og sammenligner svaret med den mængde, opskriften kræver. Er der ikke nok, tilføjes kun den manglende mængde til indkøbslisten. Er der nok, tilføjes ingrediensen slet ikke.
 6. **Køkkenvisning**: Én opskrift ad gangen, trin for trin, med stor tekst og timer.
 7. **Online og offline**: PWA-opsætning og udgivelse på GitHub Pages.
 

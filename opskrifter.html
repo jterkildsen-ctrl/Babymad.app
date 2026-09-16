@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Opskrifter – Babymad-kartotek</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="tilbage" href="index.html">&larr; Forside</a>
+  <h1>Opskrifter</h1>
+</header>
+
+<main class="side-indhold">
+  <input id="soegefelt" class="soegefelt" type="search" placeholder="Søg efter opskrift...">
+
+  <div class="filterbar">
+    <div class="filter-gruppe">
+      <label for="alder-filter">Barnets alder</label>
+      <select id="alder-filter">
+        <option value="99">Alle aldre</option>
+        <option value="4">Fra 4 måneder</option>
+        <option value="6">Fra 6 måneder</option>
+        <option value="8">Fra 8 måneder</option>
+        <option value="9">Fra 9 måneder</option>
+        <option value="12">Fra 12 måneder</option>
+      </select>
+    </div>
+
+    <div class="filter-gruppe">
+      <label for="kilde-filter">Kilde</label>
+      <select id="kilde-filter">
+        <option value="">Alle kilder</option>
+      </select>
+    </div>
+
+    <button id="frys-filter" class="pill" type="button" aria-pressed="false">❄️ Kun frysbare</button>
+  </div>
+
+  <div id="type-pills" class="filterbar"></div>
+
+  <p id="antal-resultater" class="antal-resultater"></p>
+
+  <div id="opskrift-liste" class="card-grid"></div>
+</main>
+
+<script src="data.js"></script>
+<script src="opskrifter.js"></script>
+</body>
+</html>
