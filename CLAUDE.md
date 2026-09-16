@@ -24,6 +24,7 @@ Appen bruges kun på én iPad i køkkenet. Ingen login, ingen synkronisering mel
 ## Funktioner i version 1 (i denne rækkefølge)
 1. **Skelet**: Forside med navigation (Opskrifter, Køleskab, Ugeplan, Indkøb, Indstillinger). Kan åbnes lokalt i browseren.
 2. **Opskriftskartotek**: Søg og filtrér på alder, type (grød, grøntsagsmos, frugtmos, middag/familiemad, pålæg), frysbar og kilde. Start med 15-20 opskrifter fra kilderne nedenfor.
+   - **Favoritter**: *V1 (bygget)* – hjerte-knap på hvert opskriftskort og på selve opskriftssiden (`favoritter.js`). Gemmes lokalt. Filter "Kun favoritter" på opskriftslisten.
 3. **Køleskab**: *V1 (bygget)* – dækker bredt "hvad har vi herhjemme", altså køl, frost og tørvarer (mel, havregryn, ris m.m.) under ét, ikke kun det fysiske køleskab. Alle unikke ingredienser fra opskrifterne vises som store til/fra-piller grupperet efter butiksafdeling, med søgefelt. Afkrydsning gemmes lokalt. Under listen vises "Foreslåede opskrifter" sorteret efter færrest manglende ingredienser (vand tælles aldrig som manglende), med et badge "Mangler X" eller "Du har det hele".
 4. **Ugeplan**: 7 dage × måltider (morgen, middag, aften). Vælg selv eller tryk "Foreslå uge". Kør regeltjek (se nedenfor) og vis advarsler tydeligt, men venligt.
 5. **Indkøbsliste og mealprep**: Saml ingredienser for ugen, skalér efter antal portioner, træk det fra, vi har i køleskabet, og gruppér efter butiksafdeling. Lav en prep-plan: hvad der koges samme dag, hvad der fryses i portioner, og hvornår det skal bruges.

@@ -172,6 +172,7 @@ body {
 }
 
 .opskrift-kort {
+  position: relative;
   display: block;
   background: var(--farve-knap);
   border: 3px solid var(--farve-knap-kant);
@@ -182,8 +183,35 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
+.favorit-knap {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 26px;
+  line-height: 1;
+  background: none;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.favorit-knap-stor {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: 3px solid var(--farve-knap-kant);
+  border-radius: 999px;
+  background: var(--farve-knap);
+  color: var(--farve-tekst);
+  cursor: pointer;
+  margin-top: 8px;
+}
+
 .opskrift-kort h3 {
-  margin: 0 0 10px;
+  margin: 0 40px 10px 0;
   font-size: 22px;
 }
 

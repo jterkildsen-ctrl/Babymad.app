@@ -7,6 +7,7 @@ const soegefelt = document.getElementById("soegefelt");
 const alderFilter = document.getElementById("alder-filter");
 const kildeFilter = document.getElementById("kilde-filter");
 const frysFilter = document.getElementById("frys-filter");
+const favoritFilter = document.getElementById("favorit-filter");
 const typePillsContainer = document.getElementById("type-pills");
 const listeContainer = document.getElementById("opskrift-liste");
 const antalResultater = document.getElementById("antal-resultater");
@@ -57,6 +58,7 @@ function filtrerOpskrifter() {
   const maxAlder = Number(alderFilter.value);
   const kilde = kildeFilter.value;
   const kunFrysbare = frysFilter.getAttribute("aria-pressed") === "true";
+  const kunFavoritter = favoritFilter.getAttribute("aria-pressed") === "true";
 
   return alleOpskrifter.filter((o) => {
     if (soegetekst && !o.navn.toLowerCase().includes(soegetekst)) return false;
@@ -64,6 +66,7 @@ function filtrerOpskrifter() {
     if (o.alderFraMdr > maxAlder) return false;
     if (kilde && o.kilde.navn !== kilde) return false;
     if (kunFrysbare && !o.frysbar) return false;
+    if (kunFavoritter && !erFavorit(o.id)) return false;
     return true;
   });
 }
@@ -73,7 +76,10 @@ function lavOpskriftKort(opskrift) {
   link.className = "opskrift-kort";
   link.href = `opskrift.html?id=${encodeURIComponent(opskrift.id)}`;
 
+  const favorit = erFavorit(opskrift.id);
+
   link.innerHTML = `
+    <button class="favorit-knap" type="button" aria-label="${favorit ? "Fjern favorit" : "Tilføj favorit"}" aria-pressed="${favorit}">${favorit ? "❤️" : "🤍"}</button>
     <h3>${opskrift.navn}</h3>
     <div class="kort-badges">
       <span class="badge">${opskrift.type}</span>
@@ -82,6 +88,15 @@ function lavOpskriftKort(opskrift) {
     </div>
     <p class="kort-tid">${opskrift.tidMin} min.</p>
   `;
+
+  const favoritKnap = link.querySelector(".favorit-knap");
+  favoritKnap.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    skiftFavorit(opskrift.id);
+    visOpskrifter();
+  });
+
   return link;
 }
 
@@ -97,12 +112,17 @@ function visOpskrifter() {
   }
 }
 
-frysFilter.addEventListener("click", () => {
-  const aktiv = frysFilter.getAttribute("aria-pressed") === "true";
-  frysFilter.setAttribute("aria-pressed", aktiv ? "false" : "true");
-  frysFilter.classList.toggle("pill-aktiv", !aktiv);
-  visOpskrifter();
-});
+function tilfoejTogglePil(knap) {
+  knap.addEventListener("click", () => {
+    const aktiv = knap.getAttribute("aria-pressed") === "true";
+    knap.setAttribute("aria-pressed", aktiv ? "false" : "true");
+    knap.classList.toggle("pill-aktiv", !aktiv);
+    visOpskrifter();
+  });
+}
+
+tilfoejTogglePil(frysFilter);
+tilfoejTogglePil(favoritFilter);
 
 soegefelt.addEventListener("input", visOpskrifter);
 alderFilter.addEventListener("change", visOpskrifter);

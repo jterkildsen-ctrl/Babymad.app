@@ -22,6 +22,8 @@ function visOpskrift(o) {
 
   const trinHtml = o.trin.map((t) => `<li>${t}</li>`).join("");
 
+  const favorit = erFavorit(o.id);
+
   indhold.innerHTML = `
     <div class="kort-badges">
       <span class="badge">${o.type}</span>
@@ -30,6 +32,11 @@ function visOpskrift(o) {
       <span class="badge">${o.portioner} portioner</span>
       ${o.frysbar ? '<span class="badge">❄️ Frysbar</span>' : ""}
     </div>
+
+    <button id="favorit-knap" class="favorit-knap-stor" type="button" aria-pressed="${favorit}">
+      <span id="favorit-ikon">${favorit ? "❤️" : "🤍"}</span>
+      <span id="favorit-tekst">${favorit ? "Favorit" : "Tilføj favorit"}</span>
+    </button>
 
     <h2>Ingredienser</h2>
     <ul class="ingrediens-liste">${ingredienserHtml}</ul>
@@ -55,6 +62,16 @@ function visOpskrift(o) {
   const knap = document.getElementById("tilfoej-knap");
   const kvittering = document.getElementById("tilfoej-kvittering");
   const portionInput = document.getElementById("portion-antal");
+  const favoritKnap = document.getElementById("favorit-knap");
+  const favoritIkon = document.getElementById("favorit-ikon");
+  const favoritTekst = document.getElementById("favorit-tekst");
+
+  favoritKnap.addEventListener("click", () => {
+    const nuFavorit = skiftFavorit(o.id);
+    favoritKnap.setAttribute("aria-pressed", nuFavorit);
+    favoritIkon.textContent = nuFavorit ? "❤️" : "🤍";
+    favoritTekst.textContent = nuFavorit ? "Favorit" : "Tilføj favorit";
+  });
 
   knap.addEventListener("click", () => {
     const oensketAntal = Number(portionInput.value) || o.portioner;
