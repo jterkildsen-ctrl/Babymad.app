@@ -314,6 +314,104 @@ body {
   cursor: not-allowed;
 }
 
+/* Køkkenvisning */
+
+.wakelock-badge {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 26px;
+}
+
+.fremgang-tekst {
+  text-align: center;
+  color: #6b6258;
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+
+.koekken-indhold {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 32px 140px;
+  text-align: center;
+}
+
+.trin-nummer {
+  color: var(--farve-accent-mork);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.trin-tekst-stor {
+  font-size: clamp(28px, 5vw, 46px);
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.ingrediens-liste-stor {
+  text-align: left;
+  display: inline-block;
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1.6;
+}
+
+.koekken-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 2px;
+  background: var(--farve-knap-kant);
+}
+
+.knap-nav {
+  flex: 1;
+  padding: 24px 16px;
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 700;
+  border: none;
+  background: var(--farve-accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.knap-nav:disabled {
+  background: var(--farve-knap);
+  color: #b3ab9e;
+  cursor: not-allowed;
+}
+
+.timer-boks {
+  margin-top: 24px;
+}
+
+.timer-visning {
+  font-size: clamp(40px, 8vw, 64px);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  margin: 0 0 12px;
+}
+
+.timer-faerdig {
+  color: var(--farve-accent-mork);
+  animation: puls 1s infinite;
+}
+
+@keyframes puls {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.knap-link {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
 .knap-lille {
   padding: 12px 20px;
   font-size: 18px;

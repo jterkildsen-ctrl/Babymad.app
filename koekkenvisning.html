@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Køkkenvisning – Babymad-kartotek</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="koekken-side">
+<header class="topbar">
+  <a class="tilbage" id="afslut-link" href="opskrifter.html">&larr; Afslut</a>
+  <h1 id="koekken-titel">Køkkenvisning</h1>
+  <span id="wakelock-badge" class="wakelock-badge" hidden title="Skærmen holdes tændt">☀️</span>
+</header>
+
+<p id="fremgang" class="fremgang-tekst"></p>
+
+<main id="koekken-indhold" class="koekken-indhold"></main>
+
+<nav class="koekken-nav">
+  <button id="forrige-knap" class="knap-nav" type="button">◀ Forrige</button>
+  <button id="naeste-knap" class="knap-nav" type="button">Næste ▶</button>
+</nav>
+
+<script src="data.js"></script>
+<script src="koekkenvisning.js"></script>
+</body>
+</html>

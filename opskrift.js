@@ -38,6 +38,10 @@ function visOpskrift(o) {
       <span id="favorit-tekst">${favorit ? "Favorit" : "Tilføj favorit"}</span>
     </button>
 
+    <a class="knap-primaer knap-link" href="koekkenvisning.html?id=${encodeURIComponent(o.id)}">
+      👨‍🍳 Start køkkenvisning
+    </a>
+
     <h2>Ingredienser</h2>
     <ul class="ingrediens-liste">${ingredienserHtml}</ul>
 
