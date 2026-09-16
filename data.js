@@ -43,6 +43,28 @@ function koebsNavn(ing) {
   return ing.valg ? ing.valg[1] : ing.navn;
 }
 
+const FOEDSELSDATO_NOEGLE = "babymad-foedselsdato";
+
+function hentFoedselsdato() {
+  return localStorage.getItem(FOEDSELSDATO_NOEGLE) || "";
+}
+
+function gemFoedselsdato(dato) {
+  localStorage.setItem(FOEDSELSDATO_NOEGLE, dato);
+}
+
+// Barnets alder i fulde måneder, ud fra fødselsdatoen. Returnerer null, hvis den ikke er sat.
+function beregnAlderIMdr(foedselsdato) {
+  if (!foedselsdato) return null;
+  const foedsel = new Date(foedselsdato);
+  if (Number.isNaN(foedsel.getTime())) return null;
+
+  const nu = new Date();
+  let mdr = (nu.getFullYear() - foedsel.getFullYear()) * 12 + (nu.getMonth() - foedsel.getMonth());
+  if (nu.getDate() < foedsel.getDate()) mdr -= 1;
+  return Math.max(0, mdr);
+}
+
 // Alle unikke ingredienser på tværs af opskrifterne (undtagen vand), til Køleskab-siden.
 function hentAlleIngredienser(opskrifter) {
   const fundne = new Map();

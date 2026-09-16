@@ -12,7 +12,21 @@
   <h1>Indstillinger</h1>
 </header>
 <main class="side-indhold">
-  <p>Kommer snart.</p>
+  <h2>Barnets fødselsdato</h2>
+  <p class="side-intro">
+    Bruges til at regne barnets alder ud, så opskrifter og ugeplan kan tilpasses og
+    regeltjekket fra Sundhedsstyrelsen kan advare, hvis noget ikke passer til alderen.
+  </p>
+
+  <div class="filter-gruppe">
+    <label for="foedselsdato">Fødselsdato</label>
+    <input type="date" id="foedselsdato" class="dato-felt">
+  </div>
+
+  <p id="alder-visning" class="kvittering"></p>
 </main>
+
+<script src="data.js"></script>
+<script src="indstillinger.js"></script>
 </body>
 </html>

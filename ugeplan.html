@@ -11,8 +11,21 @@
   <a class="tilbage" href="index.html">&larr; Forside</a>
   <h1>Ugeplan</h1>
 </header>
+
 <main class="side-indhold">
-  <p>Kommer snart.</p>
+  <p id="alder-info" class="side-intro"></p>
+
+  <div class="filterbar">
+    <button id="foreslaa-knap" class="knap-primaer knap-lille" type="button">✨ Foreslå uge</button>
+    <button id="ryd-uge-knap" class="pill" type="button">🗑 Ryd hele ugen</button>
+  </div>
+
+  <div id="advarsler"></div>
+
+  <div id="uge-liste"></div>
 </main>
+
+<script src="data.js"></script>
+<script src="ugeplan.js"></script>
 </body>
 </html>

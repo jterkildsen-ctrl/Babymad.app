@@ -131,6 +131,15 @@ body {
   font-size: 16px;
 }
 
+.dato-felt {
+  font-size: 20px;
+  padding: 12px 14px;
+  border: 3px solid var(--farve-knap-kant);
+  border-radius: 14px;
+  background: var(--farve-knap);
+  color: var(--farve-tekst);
+}
+
 .filter-gruppe select {
   font-size: 20px;
   padding: 12px 14px;
@@ -303,6 +312,74 @@ body {
   background: #e3d9c8;
   color: #8a8175;
   cursor: not-allowed;
+}
+
+.knap-lille {
+  padding: 12px 20px;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.dag-kort {
+  background: var(--farve-knap);
+  border: 3px solid var(--farve-knap-kant);
+  border-radius: 20px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.dag-kort h2 {
+  margin: 0 0 12px;
+}
+
+.maaltid-raekke {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.maaltid-slot {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.maaltid-slot label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b6258;
+}
+
+.maaltid-slot select {
+  font-size: 17px;
+  padding: 10px;
+  border: 3px solid var(--farve-knap-kant);
+  border-radius: 12px;
+  background: var(--farve-baggrund);
+  color: var(--farve-tekst);
+  width: 100%;
+}
+
+.advarsel {
+  font-size: 17px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  margin: 0 0 10px;
+}
+
+.advarsel-advarsel {
+  background: #fbe6d9;
+  color: #9a4a1f;
+}
+
+.advarsel-tip {
+  background: #eef2fb;
+  color: #375080;
+}
+
+.advarsel-info {
+  background: #f1e9db;
+  color: var(--farve-accent-mork);
 }
 
 .kilde-tekst {
