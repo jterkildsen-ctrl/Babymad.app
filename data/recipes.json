@@ -1,0 +1,559 @@
+[
+  {
+    "id": "tynd-groed",
+    "navn": "Tynd grød",
+    "type": "grød",
+    "alderFraMdr": 4,
+    "portioner": 2,
+    "ingredienser": [
+      { "navn": "majs-, hirse-, ris- eller boghvedemel", "maengde": 0.25, "enhed": "dl", "afdeling": "kolonial" },
+      { "navn": "vand", "maengde": 1, "enhed": "dl", "afdeling": "andet" },
+      { "navn": "fedtstof", "maengde": 0.5, "enhed": "tsk", "afdeling": "køl" },
+      { "navn": "mælk", "valg": ["modermælk", "modermælkserstatning (færdigblandet)"], "maengde": 1, "enhed": "dl", "afdeling": "baby" },
+      { "navn": "frugtmos, fx æble eller pære", "maengde": 1, "enhed": "spsk", "afdeling": "frugt og grønt" }
+    ],
+    "trin": [
+      "Pisk mel og vand sammen i en lille gryde, så det ikke klumper.",
+      "Kog grøden ved svag varme i 2-3 minutter under omrøring.",
+      "Tag gryden af varmen og rør fedtstof og mælk i.",
+      "Smag evt. til med lidt frugtmos.",
+      "Tjek at grøden har den rette spisetemperatur, før den serveres."
+    ],
+    "tidMin": 10,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": ["fedtstof", "mælk"],
+    "flag": { "kodEllerFisk": false, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "havregroed",
+    "navn": "Havregrød",
+    "type": "grød",
+    "alderFraMdr": 4,
+    "portioner": 2,
+    "ingredienser": [
+      { "navn": "havregryn", "maengde": 1, "enhed": "dl", "afdeling": "kolonial" },
+      { "navn": "koldt vand", "maengde": 1.5, "enhed": "dl", "afdeling": "andet" },
+      { "navn": "fedtstof", "maengde": 0.5, "enhed": "tsk", "afdeling": "køl" },
+      { "navn": "mælk", "valg": ["modermælk", "modermælkserstatning (færdigblandet)"], "maengde": 1, "enhed": "dl", "afdeling": "baby" },
+      { "navn": "frugtmos, fx jordbærmos", "maengde": 1, "enhed": "spsk", "afdeling": "frugt og grønt" }
+    ],
+    "trin": [
+      "Bring vand og havregryn i kog i en lille gryde.",
+      "Skru ned og lad grøden koge 2-3 minutter under omrøring.",
+      "Tag gryden af varmen og rør fedtstof og mælk i.",
+      "Server med lidt frugtmos for en sødere smag.",
+      "Tjek spisetemperaturen, før grøden gives til barnet."
+    ],
+    "tidMin": 10,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": ["fedtstof", "mælk"],
+    "flag": { "kodEllerFisk": false, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "oellebroed",
+    "navn": "Øllebrød",
+    "type": "grød",
+    "alderFraMdr": 4,
+    "portioner": 2,
+    "ingredienser": [
+      { "navn": "rugbrød uden kerner", "maengde": 2, "enhed": "skiver", "afdeling": "brød" },
+      { "navn": "koldt vand", "maengde": 2, "enhed": "dl", "afdeling": "andet" },
+      { "navn": "fedtstof", "maengde": 1, "enhed": "tsk", "afdeling": "køl" },
+      { "navn": "mælk", "valg": ["modermælk", "modermælkserstatning (færdigblandet)"], "maengde": 0.5, "enhed": "dl", "afdeling": "baby" },
+      { "navn": "frugtmos, fx pæremos", "maengde": 1, "enhed": "spsk", "afdeling": "frugt og grønt" }
+    ],
+    "trin": [
+      "Skær rugbrødet i tern, læg det i en gryde med vand og sæt låg på.",
+      "Stil det på køl natten over, til brødet er helt opblødt.",
+      "Bring det i kog og lad det simre 2-3 minutter under omrøring.",
+      "Blend eller pres blandingen igennem en sigte, til den er jævn.",
+      "Tag gryden af varmen og rør fedtstof og mælk i.",
+      "Server evt. med lidt frugtmos. Tjek spisetemperaturen."
+    ],
+    "tidMin": 15,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": ["fedtstof", "mælk"],
+    "flag": { "kodEllerFisk": false, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "trekornsgroed",
+    "navn": "Trekornsgrød",
+    "type": "grød",
+    "alderFraMdr": 6,
+    "portioner": 2,
+    "ingredienser": [
+      { "navn": "havregryn", "maengde": 1, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "hirseflager", "maengde": 1, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "rugmel", "maengde": 1, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "vand", "maengde": 2, "enhed": "dl", "afdeling": "andet" },
+      { "navn": "fedtstof", "maengde": 1, "enhed": "tsk", "afdeling": "køl" },
+      { "navn": "mælk", "valg": ["modermælk", "modermælkserstatning (færdigblandet)"], "maengde": 0.5, "enhed": "dl", "afdeling": "baby" }
+    ],
+    "trin": [
+      "Pisk gryn, flager, mel og vand sammen i en gryde.",
+      "Bring i kog og lad grøden koge 2-3 minutter under omrøring.",
+      "Tag gryden af varmen og rør fedtstof og mælk i.",
+      "Smag evt. til med lidt frugtmos.",
+      "Tjek spisetemperaturen, før grøden serveres."
+    ],
+    "tidMin": 10,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": ["fedtstof", "mælk"],
+    "flag": { "kodEllerFisk": false, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "kartoffelmos",
+    "navn": "Kartoffelmos",
+    "type": "grøntsagsmos",
+    "alderFraMdr": 4,
+    "portioner": 2,
+    "ingredienser": [
+      { "navn": "kartoffel", "maengde": 150, "enhed": "g", "afdeling": "frugt og grønt" },
+      { "navn": "fedtstof", "maengde": 1, "enhed": "tsk", "afdeling": "køl" },
+      { "navn": "mælk", "valg": ["modermælk", "modermælkserstatning (færdigblandet)"], "maengde": 0.5, "enhed": "dl", "afdeling": "baby" }
+    ],
+    "trin": [
+      "Skræl kartoflerne og skær dem i mindre stykker.",
+      "Kog dem møre i vand, der lige dækker, i ca. 12-15 minutter.",
+      "Gem lidt af kogevandet og hæld resten fra.",
+      "Mos kartoflerne godt med en gaffel eller kartoffelmoser.",
+      "Pisk fedtstof og mælk i, til mosen er cremet.",
+      "Tilsæt evt. lidt af det gemte kogevand, hvis mosen er for tyk.",
+      "Tjek spisetemperaturen, før mosen serveres."
+    ],
+    "tidMin": 20,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": ["fedtstof", "mælk"],
+    "flag": { "kodEllerFisk": false, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "kartoffel-guleroed-mos",
+    "navn": "Kartoffel-grøntsagsmos med gulerod",
+    "type": "grøntsagsmos",
+    "alderFraMdr": 4,
+    "portioner": 2,
+    "ingredienser": [
+      { "navn": "kartoffel", "maengde": 125, "enhed": "g", "afdeling": "frugt og grønt" },
+      { "navn": "gulerod, persillerod eller pastinak", "maengde": 75, "enhed": "g", "afdeling": "frugt og grønt" },
+      { "navn": "fedtstof", "maengde": 1, "enhed": "tsk", "afdeling": "køl" },
+      { "navn": "mælk", "valg": ["modermælk", "modermælkserstatning (færdigblandet)"], "maengde": 0.5, "enhed": "dl", "afdeling": "baby" }
+    ],
+    "trin": [
+      "Skræl kartoffel og grøntsag og skær dem i mindre stykker.",
+      "Kog dem møre i vand, der lige dækker, i ca. 12-15 minutter.",
+      "Gem lidt af kogevandet og hæld resten fra.",
+      "Mos det hele med en gaffel eller kartoffelmoser.",
+      "Pisk fedtstof og mælk i, til mosen er cremet.",
+      "Tilsæt evt. lidt af det gemte kogevand, hvis mosen er for tyk.",
+      "Tjek spisetemperaturen, før mosen serveres."
+    ],
+    "tidMin": 20,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": ["fedtstof", "mælk"],
+    "flag": { "kodEllerFisk": false, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "ovnbagt-kartoffel-rodfrugtmos",
+    "navn": "Ovnbagt kartoffel-rodfrugtmos",
+    "type": "grøntsagsmos",
+    "alderFraMdr": 9,
+    "portioner": 4,
+    "ingredienser": [
+      { "navn": "bagekartofler", "maengde": 2, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "gulerod", "maengde": 2, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "pastinak", "maengde": 1, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "persillerod", "maengde": 1, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "knoldselleri", "maengde": 0.25, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "olie", "maengde": 2, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "hvidløg", "maengde": 2, "enhed": "fed", "afdeling": "frugt og grønt" },
+      { "navn": "mælk", "maengde": 2, "enhed": "dl", "afdeling": "køl" }
+    ],
+    "trin": [
+      "Tænd ovnen på 200 grader.",
+      "Skræl og skær alle grøntsagerne i tern.",
+      "Vend grøntsagerne med olie og hvidløg og pak dem ind i bagepapir.",
+      "Bag pakken i ovnen i ca. 30 minutter, til grøntsagerne er møre.",
+      "Varm mælken og mos de bagte grøntsager sammen med mælken, til konsistensen passer.",
+      "Smag til med lidt salt til de voksne. Undlad salt til barnets portion."
+    ],
+    "tidMin": 45,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": false, "ris": false, "nitratGroent": true, "aeg": false, "komaelk": true },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "kogt-paeremos",
+    "navn": "Kogt pæremos",
+    "type": "frugtmos",
+    "alderFraMdr": 4,
+    "portioner": 2,
+    "ingredienser": [
+      { "navn": "pære", "maengde": 1, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "vand", "maengde": 1, "enhed": "dl", "afdeling": "andet" }
+    ],
+    "trin": [
+      "Skræl pæren, fjern kernehuset og skær den i små tern.",
+      "Kog ternene i vand under låg ved svag varme i 5-10 minutter.",
+      "Rør af og til, så mosen ikke brænder på.",
+      "Mos pæren med en gaffel, eller blend den for en helt cremet mos.",
+      "Tjek spisetemperaturen, før mosen serveres."
+    ],
+    "tidMin": 15,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": false, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "kogt-jordbaermos",
+    "navn": "Kogt jordbærmos",
+    "type": "frugtmos",
+    "alderFraMdr": 4,
+    "portioner": 2,
+    "ingredienser": [
+      { "navn": "jordbær, frosne eller friske", "maengde": 100, "enhed": "g", "afdeling": "frugt og grønt" },
+      { "navn": "vand", "maengde": 0.5, "enhed": "dl", "afdeling": "andet" }
+    ],
+    "trin": [
+      "Kom jordbær og vand i en lille gryde med låg.",
+      "Kog ved svag varme i ca. 5 minutter, til bærrene er bløde.",
+      "Mos bærrene med en gaffel, eller blend for en cremet mos.",
+      "Lad mosen køle af og tjek spisetemperaturen, før den serveres.",
+      "Frosne bær skal altid koges igennem; friske bær kan moses uden kogning."
+    ],
+    "tidMin": 10,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": false, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "tomatsuppe-kartofler-kikaerter",
+    "navn": "Tomatsuppe med kartofler og kikærter",
+    "type": "middag/familiemad",
+    "alderFraMdr": 9,
+    "portioner": 4,
+    "ingredienser": [
+      { "navn": "løg", "maengde": 2, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "kartofler", "maengde": 5, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "rød peberfrugt", "maengde": 1, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "olie", "maengde": 1, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "flåede tomater", "maengde": 800, "enhed": "g", "afdeling": "kolonial" },
+      { "navn": "hvidløg", "maengde": 1, "enhed": "fed", "afdeling": "frugt og grønt" },
+      { "navn": "grøntsagsbouillon", "maengde": 7.5, "enhed": "dl", "afdeling": "kolonial" },
+      { "navn": "kikærter, kogte", "maengde": 400, "enhed": "g", "afdeling": "kolonial" },
+      { "navn": "græsk yoghurt 2%", "maengde": 100, "enhed": "g", "afdeling": "køl" },
+      { "navn": "fuldkornsbrød", "maengde": 300, "enhed": "g", "afdeling": "brød" }
+    ],
+    "trin": [
+      "Hak løg og hvidløg fint. Skær kartofler og peberfrugt i mindre stykker.",
+      "Svits løg, kartofler og peberfrugt i olie i 3-4 minutter.",
+      "Tilsæt tomater, hvidløg, bouillon og kikærter og kog under låg i ca. 20 minutter.",
+      "Blend suppen med en stavblender.",
+      "Smag til med salt og peber til de voksne - spar på saltet til barnet.",
+      "Server suppen med en klat yoghurt og fuldkornsbrød. Yoghurt er kun til børn fra 9 måneder."
+    ],
+    "tidMin": 35,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": false, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "kokos-limesuppe-med-koed",
+    "navn": "Kokos-limesuppe med kød",
+    "type": "middag/familiemad",
+    "alderFraMdr": 9,
+    "portioner": 4,
+    "ingredienser": [
+      { "navn": "magert svinekød", "maengde": 300, "enhed": "g", "afdeling": "kød og fisk" },
+      { "navn": "forårsløg eller porre", "maengde": 5, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "gulerødder", "maengde": 4, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "olie", "maengde": 1, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "bouillon", "maengde": 5, "enhed": "dl", "afdeling": "kolonial" },
+      { "navn": "kokosmælk, light", "maengde": 2, "enhed": "dl", "afdeling": "kolonial" },
+      { "navn": "gurkemeje", "maengde": 2, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "lime- eller citronsaft", "maengde": 2, "enhed": "spsk", "afdeling": "frugt og grønt" },
+      { "navn": "sukker", "maengde": 1, "enhed": "tsk", "afdeling": "kolonial" },
+      { "navn": "grønne ærter, frosne", "maengde": 250, "enhed": "g", "afdeling": "frost" },
+      { "navn": "fuldkornsboller eller -brød", "maengde": 400, "enhed": "g", "afdeling": "brød" }
+    ],
+    "trin": [
+      "Skær kødet i tynde strimler. Skær forårsløg i skiver og gulerødder i små tern.",
+      "Svits forårsløg og gulerødder kort i olie.",
+      "Tilsæt bouillon, kokosmælk, gurkemeje, limesaft og sukker og kog 5 minutter ved svag varme.",
+      "Kom kødet i og kog 3-4 minutter, til det er gennemstegt.",
+      "Kom ærterne i og kog op.",
+      "Skær barnets kød ud i små stykker og server suppen med brød til."
+    ],
+    "tidMin": 30,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": true, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "fiskefrikadeller-kartoffelfritter-tomatsovs",
+    "navn": "Fiskefrikadeller med kartoffelfritter og tomatsovs",
+    "type": "middag/familiemad",
+    "alderFraMdr": 9,
+    "portioner": 4,
+    "ingredienser": [
+      { "navn": "hakket fisk", "maengde": 400, "enhed": "g", "afdeling": "kød og fisk" },
+      { "navn": "løg", "maengde": 0.5, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "æg", "maengde": 1, "enhed": "stk", "afdeling": "køl" },
+      { "navn": "hvedemel", "maengde": 2, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "mælk", "maengde": 0.5, "enhed": "dl", "afdeling": "køl" },
+      { "navn": "olie og smør til stegning", "maengde": 2, "enhed": "spsk", "afdeling": "køl" },
+      { "navn": "kartofler", "maengde": 1000, "enhed": "g", "afdeling": "frugt og grønt" },
+      { "navn": "olie til kartofler", "maengde": 1, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "løg", "maengde": 1, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "flåede tomater", "maengde": 1, "enhed": "dåse", "afdeling": "kolonial" },
+      { "navn": "sukker", "maengde": 1, "enhed": "tsk", "afdeling": "kolonial" }
+    ],
+    "trin": [
+      "Rør hakket fisk med revet løg, æg, mel og mælk til en fars, der lige kan formes.",
+      "Sæt farsen på køl, mens kartoflerne og tomatsovsen laves.",
+      "Skær kartofler i både, vend dem i olie og bag ved 220 grader i ca. 40 minutter.",
+      "Svits løg til tomatsovsen kort i olie, tilsæt tomater og lad det simre 2-3 minutter. Smag til med sukker.",
+      "Form frikadeller af fiskefarsen og steg dem 5 minutter på hver side.",
+      "Server med fritter og tomatsovs. Spar på saltet - smag til, inden der saltes."
+    ],
+    "tidMin": 50,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": true, "ris": false, "nitratGroent": false, "aeg": true, "komaelk": true },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "laks-ris-mangosalat-citronsovs",
+    "navn": "Laks med ris, mangosalat og citronsovs",
+    "type": "middag/familiemad",
+    "alderFraMdr": 9,
+    "portioner": 4,
+    "ingredienser": [
+      { "navn": "laksefilet", "maengde": 500, "enhed": "g", "afdeling": "kød og fisk" },
+      { "navn": "fuldkornsris", "maengde": 300, "enhed": "g", "afdeling": "kolonial" },
+      { "navn": "spidskål", "maengde": 0.5, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "gulerødder", "maengde": 4, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "mango", "maengde": 1, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "smør", "maengde": 1, "enhed": "spsk", "afdeling": "køl" },
+      { "navn": "hvedemel", "maengde": 1, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "mælk", "maengde": 3, "enhed": "dl", "afdeling": "køl" },
+      { "navn": "citron", "maengde": 1, "enhed": "stk", "afdeling": "frugt og grønt" }
+    ],
+    "trin": [
+      "Kog risene efter posen, men uden salt.",
+      "Snit spidskål fint og skær gulerødder og mango i stave/både. Vend sammen i en skål.",
+      "Smelt smør, rør mel i og pisk mælk i lidt ad gangen til en jævn sovs. Smag til med citronsaft.",
+      "Læg laksestykker i et ovnfast fad og bag ved 225 grader i 10-15 minutter.",
+      "Riv kål og gulerod fint til barnets portion.",
+      "Server laks med ris, salat og citronsovs."
+    ],
+    "tidMin": 35,
+    "frysbar": false,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": true, "ris": true, "nitratGroent": false, "aeg": false, "komaelk": true },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "spaghetti-bolognese",
+    "navn": "Spaghetti bolognese",
+    "type": "middag/familiemad",
+    "alderFraMdr": 9,
+    "portioner": 4,
+    "ingredienser": [
+      { "navn": "løg", "maengde": 1, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "hvidløg", "maengde": 2, "enhed": "fed", "afdeling": "frugt og grønt" },
+      { "navn": "gulerødder", "maengde": 3, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "olivenolie", "maengde": 1, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "hakket oksekød, 10-12% fedt", "maengde": 400, "enhed": "g", "afdeling": "kød og fisk" },
+      { "navn": "hakkede, flåede tomater", "maengde": 400, "enhed": "g", "afdeling": "kolonial" },
+      { "navn": "tomatpuré", "maengde": 2, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "oregano, tørret", "maengde": 3, "enhed": "tsk", "afdeling": "kolonial" },
+      { "navn": "spaghetti, gerne fuldkorn", "maengde": 300, "enhed": "g", "afdeling": "kolonial" },
+      { "navn": "revet parmesan", "maengde": 100, "enhed": "g", "afdeling": "køl" }
+    ],
+    "trin": [
+      "Hak løg og hvidløg fint, riv gulerødderne groft.",
+      "Svits løg og hvidløg i olie, tilsæt kødet og steg det brunt.",
+      "Rør gulerødderne i og lad dem stege med i et par minutter.",
+      "Tilsæt tomater, tomatpuré og oregano og lad sovsen simre, mens spaghettien koger.",
+      "Kog spaghetti efter posens anvisning, til den er 'al dente'.",
+      "Server spaghetti med kødsovs og lidt revet parmesan. Spar på osten til barnet."
+    ],
+    "tidMin": 30,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": true, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "boller-kokos-karrysovs",
+    "navn": "Boller i kokos-karrysovs",
+    "type": "middag/familiemad",
+    "alderFraMdr": 9,
+    "portioner": 4,
+    "ingredienser": [
+      { "navn": "løg", "maengde": 1, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "gulerødder", "maengde": 2, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "hakket kalve- og svinekød, maks. 10% fedt", "maengde": 400, "enhed": "g", "afdeling": "kød og fisk" },
+      { "navn": "æg", "maengde": 1, "enhed": "stk", "afdeling": "køl" },
+      { "navn": "hvedemel", "maengde": 3, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "mælk", "maengde": 1.5, "enhed": "dl", "afdeling": "køl" },
+      { "navn": "fuldkornsris", "maengde": 300, "enhed": "g", "afdeling": "kolonial" },
+      { "navn": "æble", "maengde": 1, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "ingefær, friskrevet", "maengde": 1, "enhed": "spsk", "afdeling": "frugt og grønt" },
+      { "navn": "hvidløg", "maengde": 1, "enhed": "fed", "afdeling": "frugt og grønt" },
+      { "navn": "karry", "maengde": 3, "enhed": "tsk", "afdeling": "kolonial" },
+      { "navn": "kokosmælk, light", "maengde": 2, "enhed": "dl", "afdeling": "kolonial" }
+    ],
+    "trin": [
+      "Riv løg og gulerødder fint og rør sammen med kød, æg, mel og mælk til en fars.",
+      "Form kødboller og kog dem møre i letsaltet vand i ca. 10 minutter. Gem kogevandet.",
+      "Kog risene efter posens anvisning uden salt.",
+      "Svits løg, gulerødder og æbletern i olie, tilsæt karry og svits kort med.",
+      "Hæld kogevand, kokosmælk, ingefær og hvidløg i og lad sovsen simre 15 minutter. Blend jævnt.",
+      "Kom kødbollerne i sovsen og varm dem igennem. Server med ris."
+    ],
+    "tidMin": 45,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": true, "ris": true, "nitratGroent": false, "aeg": true, "komaelk": true },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "aertemos-paalaeg",
+    "navn": "Ærtemos",
+    "type": "pålæg",
+    "alderFraMdr": 8,
+    "portioner": 4,
+    "ingredienser": [
+      { "navn": "grønne ærter, frosne", "maengde": 300, "enhed": "g", "afdeling": "frost" },
+      { "navn": "hvidløg", "maengde": 1, "enhed": "fed", "afdeling": "frugt og grønt" },
+      { "navn": "olie", "maengde": 2, "enhed": "spsk", "afdeling": "kolonial" }
+    ],
+    "trin": [
+      "Kog ærterne møre i vand, der lige dækker, i 5 minutter.",
+      "Gem lidt af kogevandet og lad ærterne køle af.",
+      "Blend ærterne med presset hvidløg og olie.",
+      "Tilsæt lidt kogevand, til mosen er cremet.",
+      "Smag til - spar på saltet til barnets portion."
+    ],
+    "tidMin": 15,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": false, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "broccoli-paalaeg",
+    "navn": "Broccolipålæg",
+    "type": "pålæg",
+    "alderFraMdr": 8,
+    "portioner": 4,
+    "ingredienser": [
+      { "navn": "broccoli", "maengde": 200, "enhed": "g", "afdeling": "frugt og grønt" },
+      { "navn": "løg", "maengde": 0.25, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "flødeost, mager, naturel", "maengde": 200, "enhed": "g", "afdeling": "køl" },
+      { "navn": "citronsaft", "maengde": 1, "enhed": "stænk", "afdeling": "frugt og grønt" }
+    ],
+    "trin": [
+      "Skær toppen af broccolien i små buketter og kog dem møre, men med lidt bid.",
+      "Lad broccolien køle af i en sigte.",
+      "Riv lidt løg fint og blend det sammen med broccolien.",
+      "Rør eller blend flødeosten i og smag til med citronsaft.",
+      "Server som pålæg eller dip."
+    ],
+    "tidMin": 15,
+    "frysbar": false,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": false, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "hummus-paalaeg",
+    "navn": "Hummus",
+    "type": "pålæg",
+    "alderFraMdr": 8,
+    "portioner": 4,
+    "ingredienser": [
+      { "navn": "kikærter, kogte", "maengde": 150, "enhed": "g", "afdeling": "kolonial" },
+      { "navn": "hvidløg", "maengde": 1, "enhed": "fed", "afdeling": "frugt og grønt" },
+      { "navn": "citronsaft", "maengde": 2.5, "enhed": "spsk", "afdeling": "frugt og grønt" },
+      { "navn": "tahin (sesamsmør)", "maengde": 2, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "spidskommen, stødt", "maengde": 1, "enhed": "tsk", "afdeling": "kolonial" },
+      { "navn": "olivenolie", "maengde": 4, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "koldt vand", "maengde": 1.25, "enhed": "dl", "afdeling": "andet" }
+    ],
+    "trin": [
+      "Pres hvidløget.",
+      "Blend kikærter, hvidløg, tahin, spidskommen, olie, vand og citronsaft, til hummussen er jævn.",
+      "Juster konsistensen med lidt mere vand, hvis den er for tyk.",
+      "Smag til og server som pålæg eller dip."
+    ],
+    "tidMin": 15,
+    "frysbar": false,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": false, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "kyllingefilet-paalaeg",
+    "navn": "Kyllingefilet som pålæg",
+    "type": "pålæg",
+    "alderFraMdr": 8,
+    "portioner": 4,
+    "ingredienser": [
+      { "navn": "kyllingefilet", "maengde": 2, "enhed": "stk", "afdeling": "kød og fisk" },
+      { "navn": "olie", "maengde": 2, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "basilikum, tørret", "maengde": 0.5, "enhed": "spsk", "afdeling": "kolonial" }
+    ],
+    "trin": [
+      "Tænd ovnen på 200 grader.",
+      "Læg kyllingefileterne i et smurt, ovnfast fad.",
+      "Pensl med olie og drys med basilikum.",
+      "Steg i ovnen i ca. 12-15 minutter, til kødet er gennemstegt og saften klar.",
+      "Lad kødet køle af og skær det i tynde skiver som pålæg."
+    ],
+    "tidMin": 25,
+    "frysbar": true,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": true, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  },
+  {
+    "id": "fiskepaalaeg",
+    "navn": "Fiskepålæg",
+    "type": "pålæg",
+    "alderFraMdr": 9,
+    "portioner": 4,
+    "ingredienser": [
+      { "navn": "fiskefilet, fx sej eller laks", "maengde": 125, "enhed": "g", "afdeling": "kød og fisk" },
+      { "navn": "olie til pensling", "maengde": 1, "enhed": "spsk", "afdeling": "kolonial" },
+      { "navn": "mayonnaise", "maengde": 1, "enhed": "spsk", "afdeling": "køl" },
+      { "navn": "A38", "maengde": 1, "enhed": "spsk", "afdeling": "køl" },
+      { "navn": "citronsaft", "maengde": 1, "enhed": "stænk", "afdeling": "frugt og grønt" }
+    ],
+    "trin": [
+      "Tænd ovnen på 175 grader.",
+      "Læg fiskefileten i et smurt, ovnfast fad og pensl med olie.",
+      "Bag fisken i ca. 10-12 minutter, til den er gennembagt.",
+      "Lad fisken køle af og findel den med en gaffel.",
+      "Rør mayonnaise, A38 og citronsaft sammen og vend fisken i.",
+      "A38 er et surmælksprodukt og bruges derfor tidligst fra 9 måneder."
+    ],
+    "tidMin": 20,
+    "frysbar": false,
+    "tilsaetVedOpvarmning": [],
+    "flag": { "kodEllerFisk": true, "ris": false, "nitratGroent": false, "aeg": false, "komaelk": false },
+    "kilde": { "navn": "Mad til små (SST)", "url": "https://sundhedspleje.aarhus.dk/media/2kij2txh/mad-til-smaa-fra-maelk-til-familiens-mad.pdf" }
+  }
+]
