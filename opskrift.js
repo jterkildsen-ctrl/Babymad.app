@@ -37,12 +37,21 @@ function visOpskrift(o) {
     <h2>Sådan gør du</h2>
     <ol class="trin-liste">${trinHtml}</ol>
 
-    <button class="knap-primaer" disabled title="Kommer snart – kræver Køleskab">
-      🛒 Tilføj til indkøbsliste (kommer snart)
+    <button id="tilfoej-knap" class="knap-primaer" type="button">
+      🛒 Tilføj til indkøbsliste
     </button>
+    <p id="tilfoej-kvittering" class="kvittering" hidden></p>
 
     <p class="kilde-tekst">
       Kilde: <a href="${o.kilde.url}" target="_blank" rel="noopener">${o.kilde.navn}</a>
     </p>
   `;
+
+  const knap = document.getElementById("tilfoej-knap");
+  const kvittering = document.getElementById("tilfoej-kvittering");
+  knap.addEventListener("click", () => {
+    tilfoejOpskriftTilIndkoebsliste(o);
+    kvittering.innerHTML = '✅ Tilføjet til <a href="indkoeb.html">indkøbslisten</a>.';
+    kvittering.hidden = false;
+  });
 }

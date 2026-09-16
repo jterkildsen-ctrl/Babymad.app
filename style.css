@@ -250,3 +250,51 @@ body {
   font-size: 16px;
   color: #6b6258;
 }
+
+.kvittering {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--farve-accent-mork);
+}
+
+.kvittering a {
+  color: inherit;
+}
+
+/* Indkøbsliste */
+
+.indkoeb-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px;
+}
+
+.indkoeb-vare {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--farve-knap);
+  border: 3px solid var(--farve-knap-kant);
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+}
+
+.vare-tekst {
+  font-size: clamp(18px, 2.2vw, 22px);
+}
+
+.slet-knap {
+  flex-shrink: 0;
+  font-size: 22px;
+  font-weight: 700;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #f1e9db;
+  color: var(--farve-accent-mork);
+  cursor: pointer;
+}
