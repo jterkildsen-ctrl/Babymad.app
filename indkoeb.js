@@ -1,14 +1,3 @@
-const AFDELING_RAEKKEFOELGE = [
-  "frugt og grønt",
-  "kød og fisk",
-  "køl",
-  "frost",
-  "brød",
-  "kolonial",
-  "baby",
-  "andet",
-];
-
 const container = document.getElementById("indkoeb-indhold");
 
 function grupperEfterAfdeling(liste) {

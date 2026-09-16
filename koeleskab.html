@@ -11,8 +11,23 @@
   <a class="tilbage" href="index.html">&larr; Forside</a>
   <h1>Køleskab</h1>
 </header>
+
 <main class="side-indhold">
-  <p>Kommer snart.</p>
+  <p class="side-intro">
+    Afkryds det, I har derhjemme lige nu – både køl, frost og tørvarer som mel og havregryn.
+    Så kan appen foreslå opskrifter, hvor der mangler færrest ting.
+  </p>
+
+  <input id="soegefelt" class="soegefelt" type="search" placeholder="Søg efter en vare...">
+
+  <div id="ingrediens-liste"></div>
+
+  <h2>Foreslåede opskrifter</h2>
+  <p class="antal-resultater">Sorteret efter færrest manglende ingredienser.</p>
+  <div id="forslag-liste" class="card-grid"></div>
 </main>
+
+<script src="data.js"></script>
+<script src="koeleskab.js"></script>
 </body>
 </html>

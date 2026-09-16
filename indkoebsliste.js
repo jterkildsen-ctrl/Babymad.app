@@ -2,10 +2,6 @@
 
 const INDKOEB_NOEGLE = "babymad-indkoebsliste";
 
-function erVand(navn) {
-  return /^(koldt |lunkent |kogende )?vand$/i.test(navn.trim());
-}
-
 function hentIndkoebsliste() {
   try {
     const gemt = localStorage.getItem(INDKOEB_NOEGLE);
@@ -32,7 +28,7 @@ function tilfoejOpskriftTilIndkoebsliste(opskrift, skaleringsFaktor = 1) {
   const liste = hentIndkoebsliste();
 
   opskrift.ingredienser.forEach((ing) => {
-    const navn = ing.valg ? ing.valg[1] : ing.navn;
+    const navn = koebsNavn(ing);
     const maengde = ing.maengde * skaleringsFaktor;
     const enhed = ing.enhed;
     const afdeling = ing.afdeling;

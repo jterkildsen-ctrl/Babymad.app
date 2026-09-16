@@ -203,6 +203,21 @@ body {
   border-radius: 999px;
 }
 
+.badge-groen {
+  background: #dcecd6;
+  color: #3f7a35;
+}
+
+.side-intro {
+  color: #6b6258;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.koeleskab-pill {
+  font-size: 17px;
+}
+
 .kort-tid {
   margin: 0;
   color: #6b6258;
@@ -211,7 +226,7 @@ body {
 
 /* Opskriftsdetalje */
 
-.opskrift-detalje h2 {
+.side-indhold h2 {
   font-size: 24px;
   margin: 28px 0 12px;
 }

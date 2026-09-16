@@ -112,7 +112,7 @@
     "alderFraMdr": 4,
     "portioner": 2,
     "ingredienser": [
-      { "navn": "kartoffel", "maengde": 150, "enhed": "g", "afdeling": "frugt og grønt" },
+      { "navn": "kartofler", "maengde": 150, "enhed": "g", "afdeling": "frugt og grønt" },
       { "navn": "fedtstof", "maengde": 1, "enhed": "tsk", "afdeling": "køl" },
       { "navn": "mælk", "valg": ["modermælk", "modermælkserstatning (færdigblandet)"], "maengde": 0.5, "enhed": "dl", "afdeling": "baby" }
     ],
@@ -138,7 +138,7 @@
     "alderFraMdr": 4,
     "portioner": 2,
     "ingredienser": [
-      { "navn": "kartoffel", "maengde": 125, "enhed": "g", "afdeling": "frugt og grønt" },
+      { "navn": "kartofler", "maengde": 125, "enhed": "g", "afdeling": "frugt og grønt" },
       { "navn": "gulerod, persillerod eller pastinak", "maengde": 75, "enhed": "g", "afdeling": "frugt og grønt" },
       { "navn": "fedtstof", "maengde": 1, "enhed": "tsk", "afdeling": "køl" },
       { "navn": "mælk", "valg": ["modermælk", "modermælkserstatning (færdigblandet)"], "maengde": 0.5, "enhed": "dl", "afdeling": "baby" }
@@ -166,7 +166,7 @@
     "portioner": 4,
     "ingredienser": [
       { "navn": "bagekartofler", "maengde": 2, "enhed": "stk", "afdeling": "frugt og grønt" },
-      { "navn": "gulerod", "maengde": 2, "enhed": "stk", "afdeling": "frugt og grønt" },
+      { "navn": "gulerødder", "maengde": 2, "enhed": "stk", "afdeling": "frugt og grønt" },
       { "navn": "pastinak", "maengde": 1, "enhed": "stk", "afdeling": "frugt og grønt" },
       { "navn": "persillerod", "maengde": 1, "enhed": "stk", "afdeling": "frugt og grønt" },
       { "navn": "knoldselleri", "maengde": 0.25, "enhed": "stk", "afdeling": "frugt og grønt" },
